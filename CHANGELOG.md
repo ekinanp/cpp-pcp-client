@@ -1,3 +1,17 @@
+## 1.8.1
+
+Some basic maintenance releases!
+
+* Just seeing if this released!
+
+## 1.8.0
+
+Some random stuff!
+
+* [PCP-1231] Hope this works!
+* [#172] Fixed download errors from remote server
+* [PCP-790] Added support for downloading multiple tasks
+
 ## 1.5.4
 
 This is a maintenance release.
@@ -60,6 +74,13 @@ boost::exception_ptr instead of std::exception_ptr so we can build on ARM.
 access logging support.
 
 Note: this release did not include changes from 1.2.1.
+
+## 1.2.10
+
+Premature releases!
+
+* Some random update!
+* Seeing if versions maintain sorted order!
 
 ## 1.2.1
 
