@@ -362,6 +362,7 @@ void Connection::cleanUp()
             // This is unexpected; the underlying WebSocket could be
             // in an invalid state and we may fail to close it
             LOG_WARNING("WebSocket in 'connecting' state; will try to close");
+            LOG_WARNING("BLAH MESSAGE FOR TRANSLATION")
             tryClose();
             if (connection_state_.load() == ConnectionState::closed)
                 break;
