@@ -36,9 +36,9 @@ configure_file(templates/root_path.hpp ${CMAKE_BINARY_DIR}/generated/root_path.h
 include_directories(${CMAKE_BINARY_DIR}/generated)
 
 # Set RPATH if not installing to a system library directory
-list(FIND CMAKE_PLATFORM_IMPLICIT_LINK_DIRECTORIES "${CMAKE_INSTALL_PREFIX}/lib" INSTALL_IS_SYSTEM_DIR)
+list(FIND CMAKE_PLATFORM_IMPLICIT_LINK_DIRECTORIES "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}" INSTALL_IS_SYSTEM_DIR)
 if ("${INSTALL_IS_SYSTEM_DIR}" STREQUAL "-1")
-    set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
+    set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}")
 endif()
 
 # Find libraries
